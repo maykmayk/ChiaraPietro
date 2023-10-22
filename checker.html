@@ -15,6 +15,7 @@
             const inputCode = document.getElementById("codice").value;
 
             if (inputCode === authorizedCode) {
+                alert("Benvenuto!");
                 window.location.href = "./ricevimento.html";
             } else {
                 alert("Codice errato. Addio.");
@@ -28,11 +29,16 @@
     <div id="mainCheck">
         <div class="vh-100 row d-flex gsp-2">
             <div class="col-md-6 col-12 vh-100 d-flex gap-3 flex-column align-items-center justify-content-center px-4">
+                <div class="position-absolute d-block d-md-none" style="z-index: -1;">
+                    <div class="vh-100 w-100">
+                        <img src="./assets/images/checkerimg.jpg" class="fillImg">
+                    </div>
+                </div>
                 <div class="fs-1">Inserisci il codice</div>
                 <input type="username" id="codice" required autocomplete="off">
                 <div class="identify" onclick="login()">Accedi</div>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12 d-none d-md-block">
                 <div class="vh-100 w-100">
                     <img src="./assets/images/checkerimg.jpg" class="fillImg">
                 </div>

@@ -51,6 +51,10 @@ body {
     font-family: "NeueReg";
 }
 
+#mainCheck{
+    overflow: hidden;
+}
+
 .fillImg{
     object-fit: cover;
     height: 100%;
@@ -62,6 +66,12 @@ body {
     padding: .6em 1.6em;
     border-radius: 999px;
     width: max-content;
+    transition: all .3s ease;
+}
+
+.identify:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .heroTitle{
@@ -84,6 +94,15 @@ body {
 
 .contHero{
     height: 80vh;
+}
+
+input{
+    background-color: transparent;
+    border-radius: 999px;
+    border: 1.5px solid var(--white);
+    padding: .6em 1.6em;
+    color: var(--white);
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
